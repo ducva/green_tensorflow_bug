@@ -1,0 +1,164 @@
+{
+    "features": {
+        "frame_type": {
+            "index": 0,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "greeting": 1,
+                "help": 2,
+                "ask_japan": 3,
+                "book_hotel": 4,
+                "book_flight": 5
+            }
+
+        },
+        "frame_fulfilled": {
+            "index": 1,
+            "encoded": true
+        },
+        "strategy1": {
+            "index": 2,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "repetition": 1,
+                "confirmation": 2,
+                "further_explaination": 3,
+                "summary": 4
+            }
+
+        },
+        "strategy2": {
+            "index": 3,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "repetition": 1,
+                "confirmation": 2,
+                "further_explaination": 3,
+                "summary": 4
+            }
+
+        },
+        "strategy3": {
+            "index": 4,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "repetition": 1,
+                "confirmation": 2,
+                "further_explaination": 3,
+                "summary": 4
+            }
+
+        },
+        "strategy4": {
+            "index": 5,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "repetition": 1,
+                "confirmation": 2,
+                "further_explaination": 3,
+                "summary": 4
+            }
+
+        },
+        "strategy5": {
+            "index": 6,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "repetition": 1,
+                "confirmation": 2,
+                "further_explaination": 3,
+                "summary": 4
+            }
+
+        },
+        "intent": {
+            "index": 7,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "greeting": 1,
+                "help": 2,
+                "ask_japan": 3,
+                "book_hotel": 4,
+                "book_flight": 5
+            }
+        },
+        "entity1": {
+            "index": 8,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "location": 1,
+                "datetime": 2,
+                "destination": 3,
+                "origin": 4
+            }
+        },
+        "entity2": {
+            "index": 9,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "location": 1,
+                "datetime": 2,
+                "destination": 3,
+                "origin": 4
+            }
+        },
+        "entity3": {
+            "index": 10,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "location": 1,
+                "datetime": 2,
+                "destination": 3,
+                "origin": 4
+            }
+        },
+        "entity4": {
+            "index": 11,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "location": 1,
+                "datetime": 2,
+                "destination": 3,
+                "origin": 4
+            }
+        },
+        "entity5": {
+            "index": 12,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "location": 1,
+                "datetime": 2,
+                "destination": 3,
+                "origin": 4
+            }
+        }
+    },
+    "labels": {
+        "action": {
+            "index": 13,
+            "encoded": false,
+            "values": {
+                "none": 0,
+                "next_slot": 1,
+                "greeting": 2,
+                "confirmation": 3,
+                "summary": 4,
+                "repetition": 5,
+                "explain_more_info": 6,
+                "fulfilled": 7
+            }
+        }
+    }
+}
