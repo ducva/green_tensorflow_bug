@@ -14,8 +14,11 @@ class PredictService:
         self.graph = None
         self.forzen_model_filepath = os.path.realpath(os.path.join(base_dir, './data/model/frozen_model.pb'))
         if os.path.exists(self.forzen_model_filepath):
+            print("Before load graph")
             self.graph = self.load_graph()
+            print("Before create session")
             self.forzen_session = tf.Session(graph=self.graph)
+            print("After creating session")
 
     def load_graph(self):
         # We load the protobuf file from the disk and parse it to retrieve the
@@ -40,7 +43,9 @@ class PredictService:
     def predict(self, data):
         if self.forzen_session is None:
             # We use our "load_graph" function
+            print("Before Load graph")
             self.graph = self.load_graph()
+            print("Before Create session")
             self.forzen_session = tf.Session(graph=self.graph)
 
         # We can verify that we can access the list of operations in the graph
@@ -52,7 +57,9 @@ class PredictService:
         model = self.graph.get_tensor_by_name('prefix/model:0')
 
         # We launch a Session
+        print("Prepare to run Tensorflow Session")
         predictions = self.forzen_session.run(model, feed_dict={x: data})
+        print("Finish run Tensorflow session")
         predictions = np.argmax(predictions, axis=1)
         return predictions.tolist()
     
